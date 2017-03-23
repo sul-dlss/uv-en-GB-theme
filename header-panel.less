@@ -2,16 +2,47 @@
 
 #app{
     .headerPanel{
-        .options{
-            background-color: #5f574f;
-            .centerOptions{
-                width: 390px;
-            }
-            .rightOptions{
-                .settings{
-                    //background: url('@{theme-img-path}hamburger.png');
+
+        a.imageBtn{
+
+            &.first{
+                background-color: transparent;
+                &:hover{
+                    background-color: @gray-dark;
                 }
             }
+
+            &.prev{
+                background-color: transparent;
+                &:hover{
+                    background-color: @gray-dark;
+                }
+            }
+
+            &.next{
+                background-color: transparent;
+                &:hover{
+                    background-color: @gray-dark;
+                }
+            }
+
+            &.last{
+                background-color: transparent;
+                &:hover{
+                    background-color: @gray-dark;
+                }
+            }
+
+            &.disabled{
+                background-color: transparent;
+                &:hover{
+                    background-color: transparent;
+                }
+            } 
+        }
+
+        .options{
+            background-color: #5f574f;
         }
     }
 }
