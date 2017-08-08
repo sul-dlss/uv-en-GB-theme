@@ -13,27 +13,28 @@
             background-color: #5f574f;
             padding: 0 8px;
             
-            a {
+            button {
               &.download {
-                .icon-left('@{theme-img-path}download-3.png', 21px, 30px);
-                background-size: 21px 21px;
+                i {
+                  .icon-left('@{theme-img-path}download-3.png', 21px, 30px);
+                  background-size: 21px 21px;
+                }
                 margin-right: 0px;
                 margin-left: 4px;
-                width: 27px; // To keep previous UV spacing
               }
 
               &.share {
-                .icon-left('@{theme-img-path}share.png', 21px, 30px);
-                background-size: 21px 21px;
-                width: 27px; // To keep previous UV spacing
+                i {
+                  .icon-left('@{theme-img-path}share.png', 21px, 30px);
+                  background-size: 21px 21px;
+                }
               }
 
               &.fullScreen {
-                .icon-right('@{theme-img-path}expand-1.png', 21px, 30px);
-                line-height: 22px;
-                min-width: 25px;
-                background-size: 21px 21px;
-                float: right;
+                i {
+                  .icon-right('@{theme-img-path}expand-1.png', 21px, 30px);
+                  background-size: 21px 21px;
+                }
                 margin-right: 8px;
               }
             }
