@@ -1,5 +1,24 @@
 @theme-img-path: '../../../themes/@{theme}/img/';
 
+
+.@{icon-prefix}-download {
+  .icon-btn-2('@{theme-img-path}download-3.png');
+  background-size: 24px 24px;
+  background-position: center;
+}
+
+.@{icon-prefix}-share {
+  .icon-btn-2('@{theme-img-path}share.png');
+  background-size: 24px 24px;
+  background-position: center;
+}
+
+.@{icon-prefix}-fullscreen {
+  .icon-btn-2('@{theme-img-path}expand-1.png');
+  background-size: 24px 24px;
+  background-position: center;
+}
+
 .uv.en-gb {
     .footerPanel{
         .searchPager {
@@ -12,32 +31,6 @@
         .options{
             background-color: #5f574f;
             padding: 0 8px;
-            
-            button {
-              &.download {
-                i {
-                  .icon-left('@{theme-img-path}download-3.png', 21px, 30px);
-                  background-size: 21px 21px;
-                }
-                margin-right: 0px;
-                margin-left: 4px;
-              }
-
-              &.share {
-                i {
-                  .icon-left('@{theme-img-path}share.png', 21px, 30px);
-                  background-size: 21px 21px;
-                }
-              }
-
-              &.fullScreen {
-                i {
-                  .icon-right('@{theme-img-path}expand-1.png', 21px, 30px);
-                  background-size: 21px 21px;
-                }
-                margin-right: 8px;
-              }
-            }
         }
     }
 }
