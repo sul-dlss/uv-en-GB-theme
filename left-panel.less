@@ -7,9 +7,27 @@
         }
 
         .thumbs {
-          .thumb.selected {
+          .thumb {
+            padding-top: 2px;
             .wrap {
-              border-color: @panel-border-color;
+              border: none;
+
+              img {
+                margin: 0 auto;
+              }
+            }
+          }
+
+          .thumb.twoCol {
+            margin-right: 3px;
+            border: 2px solid @left-panel-bkgd;
+          }
+
+          .thumb.selected {
+            border: 2px solid @yellow;
+
+            .wrap {
+              border: none;
             }
           }
         }
