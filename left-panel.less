@@ -1,6 +1,26 @@
 .uv.en-gb {
   .leftPanel {
     .views {
+      .galleryView {
+        .thumbs {
+          .thumb {
+            border: 2px solid @left-panel-bkgd;
+
+            .wrap {
+              border: none;
+            }
+          }
+
+          .thumb.selected {
+            border: 2px solid @yellow;
+
+            .wrap {
+              border: none;
+            }
+          }
+        }
+      }
+
       .thumbsView {
         &:focus {
           outline: none;
@@ -9,6 +29,7 @@
         .thumbs {
           .thumb {
             padding-top: 2px;
+
             .wrap {
               border: none;
 
