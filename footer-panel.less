@@ -1,4 +1,23 @@
-@theme-img-path: '../../../themes/@{theme}/img/';
+@theme-assets-path: '../../../themes/@{theme}/assets/';
+
+
+.@{icon-prefix}-download {
+  .icon-btn-2('@{theme-assets-path}download-3.png');
+  background-size: 24px 24px;
+  background-position: center;
+}
+
+.@{icon-prefix}-share {
+  .icon-btn-2('@{theme-assets-path}share.png');
+  background-size: 24px 24px;
+  background-position: center;
+}
+
+.@{icon-prefix}-fullscreen {
+  .icon-btn-2('@{theme-assets-path}expand-1.png');
+  background-size: 24px 24px;
+  background-position: center;
+}
 
 .uv.en-gb {
     .footerPanel{
@@ -8,6 +27,10 @@
                     width: 337px;
                 }
             }
+        }
+        .options{
+            background-color: #5f574f;
+            padding: 0 8px;
         }
     }
 }

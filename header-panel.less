@@ -1,4 +1,4 @@
-@theme-img-path: '../../../themes/@{theme}/img/';
+@theme-assets-path: '../../../themes/@{theme}/assets/';
 
 .uv.en-gb {
     .headerPanel{
@@ -38,11 +38,38 @@
                 &:hover{
                     background-color: transparent;
                 }
-            } 
+            }
         }
 
         .options{
             background-color: #5f574f;
+            .centerOptions {
+                width: 390px;
+            }
+            .centerOptions {
+                display:none;
+            }
+            .rightOptions {
+                .settings {
+                    //background: url('@{theme-img-path}hamburger.png');
+                }
+            }
         }
+        .informationBox {
+            background: @dark-red;
+            color: #ffffff;
+
+            .close {
+                color: #ffffff;
+                font-size: 1.3rem;
+                margin-top: 3px;
+                text-shadow: 0 1px 0 #fff;
+                &:hover,
+                &:focus {
+                  color: darken(#ffffff, 15%);
+                }
+            }
+        }
+
     }
 }
